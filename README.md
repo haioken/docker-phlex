@@ -1,3 +1,8 @@
+# **README**
+
+## Introduction
+
+This is a copy of <a href="https://github.com/d8ahazaed/docker-phlex">d8ahazard's Phlex docker</a>, modified to point to my own repositories.
 
 ## Usage
 

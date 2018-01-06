@@ -15,13 +15,13 @@ LABEL build_version="Haioken version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 COPY root /
 
 RUN apk update \
-    && apk --no-cache add gettext iptables \
+    && apk --no-cache add gettext iptables redis \
     && envsubst "$PORTS" < /etc/templates/default > /defaults/default \
     && chmod 777 /defaults/default
     
 # ports and volumes
 VOLUME /config
 
-
+CMD ["redis-server", "/etc/redis.conf"]
 
 

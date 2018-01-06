@@ -1,5 +1,5 @@
 FROM linuxserver/nginx:latest
-MAINTAINER Digitalhigh
+MAINTAINER Haioken
 
 # set version label
 ARG BUILD_DATE
@@ -9,7 +9,7 @@ ARG HTTPSPORT=5667
 ARG FASTCGIPORT=9000
 ARG PORTS='$HTTPPORT:$HTTPSPORT:$FASTCGIPORT'
 
-LABEL build_version="Digitalhigh version:- ${VERSION} Build-date:- ${BUILD_DATE}"
+LABEL build_version="Haioken version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
 # add local files, set custom NGINX directory
 COPY root /

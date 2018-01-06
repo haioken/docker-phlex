@@ -23,13 +23,13 @@ else
 fi
 
 # fetch site
-if [ ! -d /config/www/Phlex/.git ]; then
+if [ ! -d /config/www/Phlex-able/.git ]; then
     echo "No repo found, pulling."
-	git clone https://github.com/d8ahazard/Phlex /config/www/Phlex
+	git clone https://github.com/haioken/Phlex-able /config/www/Phlex
 fi
 
-echo "Updating Phlex."
-cd /config/www/Phlex
+echo "Updating Phlex-able."
+cd /config/www/Phlex-able
 git pull
 
 # permissions
